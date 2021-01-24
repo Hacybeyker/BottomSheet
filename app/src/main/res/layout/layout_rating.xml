@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraintContainerRating"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet_background">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ratingImageClose"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_close" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/ratingTextQuestion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/rating_text_question"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatRatingBar
+        android:id="@+id/ratingRatingBar"
+        style="@style/CustomRatingBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="40dp"
+        android:numStars="5"
+        android:progressBackgroundTint="#E3E9F7"
+        android:progressTint="#FFA733"
+        android:rating="3.5"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:secondaryProgressTint="@android:color/white"
+        android:stepSize="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingTextQuestion" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/ratingTextNotSatisfied"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="88dp"
+        android:text="@string/rating_not_satisfied"
+        android:textAllCaps="true"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ratingRatingBar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/ratingTextSatisfied"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="52dp"
+        android:text="@string/rating_text_satisfied"
+        android:textAllCaps="true"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ratingRatingBar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BottomSheet</string>
+    <string name="share_now">Share Now</string>
+    <string name="name">Goku</string>
+    <string name="description">Personaje</string>
+    <string name="rating_text_question">¿Qué tan satisfecho te\n encuentras con nuestro servicio?</string>
+    <string name="rating_not_satisfied">Nada Satisfecho</string>
+    <string name="rating_text_satisfied">Muy Satisfecho</string>
+    <string name="bs_dialog_fragment">BS Dialog Fragment</string>
+    <string name="bs_dialog">BS Dialog</string>
+    <string name="steve_rogers">Steve Rogers</string>
+</resources>
